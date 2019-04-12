@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+        a{
+          text-decoration: none;
+        }
+        body {
+          position: relative;
+        }
+          .head{
+            width: 100%;
+            height: 25px;
+            position: absolute;
+            top:300px;
+            /*text-align: center;*/
+          }
+          .header p{
+            /*width: 100%;
+            height: 25px;*/
+            /*width: 20px;*/
+            background-color:#ffffff;
+            text-align: center;
+            color:#e97695;
+            font-size: 16px;
+            line-height: 25px;
+            border-bottom: 3px solid #e97695;
+          }
+          .header .up{
+            position: relative;
+          }
+          .up #img{
+            padding: 5px;
+            /*position: relative;*/
+          }
+          .up #img img{
+            width: 40px;
+            height: 40px;
+          }
+          .up #po{
+            font-size: 16px;
+            color: #353535;
+          }
+          .up #po #fan{
+            font-size: 12px;
+            color: #8f8f8f;
+          }
+          .up button{
+            width: 65px;
+            height: 25px;
+            background-color: #e97695;
+            position: absolute;
+            right: 10px;
+            top: 35px;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 14px;
+          }
+          .par #man{
+            color: #8f8f8f;
+            font-size: 13px;
+            padding-left: 5px;
+          }
+          .click{
+            padding-left: 10px;
+            padding-top: 15px;
+          }
+          .click a{
+            display: block;
+            width: 350px;
+            height: 80px;
+            /*background-color: green;*/
+            border-bottom: 5px solid #fff;
+            position: relative;
+          }
+          .click a img{
+            width: 120px;
+            height: 80px;
+          }
+          .click a .p{
+            position: absolute;
+            left: 130px;
+            top: 0px;
+            font-size: 15px;
+            color: #000;
+          }
+          .click a .p .up{
+            color: #8f8f8f;
+            font-size: 13px;
+            position: absolute;
+            left:10px;
+          }
+    </style>
+</head>
+
+<body>
+  <div class="head">
+    <div class="header"><p>简介</p></div>
+    <div class="up">
+      <span id = "img"><img src="../image/ageng.png" alt=""></span>
+      <span id = "po">
+        <p>粉红顽皮新</p>
+        <p id= "fan">213粉丝</p>
+      </span>
+      <button  id = "click" onclick = "fnclick()">＋ 关注</button>
+      <!-- <input type="button" id = "click" value = "＋ 关注" onclick = "fnclick()"> -->
+    </div>
+    <div class="par">
+      <p>【林更新】九亿少女的梦</p>
+      <p id = "man">人间种种，不过是天上仙人的一场梦罢了。</p>
+    </div>
+    <div class="click">
+      <a href="https://m.bilibili.com/video/av13395233.html?share_source=weixin&ts=1533285612&share_medium=iphone&bbid=c05c5b152f37b361cd0066f236c84cd5&from=singlemessage&isappinstalled=0">
+          <img src="../image/yue.png" alt="">
+          <div class="p">
+            <p>【宇文玥】白月光个人向</p>
+            <p class="up">  up:粉红顽皮新</p>
+          </div>
+      </a>
+      <a href="https://m.bilibili.com/video/av13395233.html?share_source=weixin&ts=1533285612&share_medium=iphone&bbid=c05c5b152f37b361cd0066f236c84cd5&from=singlemessage&isappinstalled=0">
+          <img src="../image/hou.png" alt="">
+          <div class="p">
+            <p>【孙悟空】西游降魔篇</p>
+            <p class="up">  up:粉红顽皮新</p>
+          </div>
+      </a>
+      <a href="https://m.bilibili.com/video/av13395233.html?share_source=weixin&ts=1533285612&share_medium=iphone&bbid=c05c5b152f37b361cd0066f236c84cd5&from=singlemessage&isappinstalled=0">
+          <img src="../image/yun.png" alt="">
+          <div class="p">
+            <p>【林更新】武神赵子龙x林允儿</p>
+            <p class="up">  up:粉红顽皮新</p>
+          </div>
+      </a>
+      <a href="https://m.bilibili.com/video/av13395233.html?share_source=weixin&ts=1533285612&share_medium=iphone&bbid=c05c5b152f37b361cd0066f236c84cd5&from=singlemessage&isappinstalled=0">
+          <img src="../image/tuotuo.png" alt="">
+          <div class="p">
+            <p>【狄仁杰】狄仁杰系列之四大天王 沙坨忠</p>
+            <p class="up">  up:粉红顽皮新</p>
+          </div>
+      </a>
+      <a href="https://m.bilibili.com/video/av13395233.html?share_source=weixin&ts=1533285612&share_medium=iphone&bbid=c05c5b152f37b361cd0066f236c84cd5&from=singlemessage&isappinstalled=0">
+          <img src="../image/tuo.png" alt="">
+          <div class="p">
+            <p>【林更新】舞乐传奇王子舒难陀</p>
+            <p class="up">  up:粉红顽皮新</p>
+          </div>
+      </a>
+      <a href="https://m.bilibili.com/video/av13395233.html?share_source=weixin&ts=1533285612&share_medium=iphone&bbid=c05c5b152f37b361cd0066f236c84cd5&from=singlemessage&isappinstalled=0">
+          <img src="../image/lan.png" alt="">
+          <div class="p">
+            <p>【林更新】海澜之家代言广告棉麻系列</p>
+            <p class="up">  up:粉红顽皮新</p>
+          </div>
+      </a>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+    apiready = function() {
+        var moviePlayer = api.require('moviePlayer');
+        moviePlayer.open({
+            rect: {
+                x: 0,
+                y: 0,
+                w: api.frameWidth,
+                h: 300
+            },
+            texts:{
+              title:'宇文玥'
+            },
+            styles: {
+                head: {
+                    bg: 'rgba(233,118,149,0.3)',
+                    height: 44,
+                    y: 20,
+
+                    title: {
+                        size: 20,
+                        color: '#0f0',
+                        width: 40,
+                        leftMargin: 20
+                    },
+                    backSize: 20,
+                    backImg: 'widget://image/back.png',
+                    customButtons: [{
+                        w: 20,
+                        h: 20,
+                        rightMagin: 10,
+                        img: 'widget://image/more.png',
+                        imgSelected: 'fs://image/collectSelected.png',
+
+                    }]
+                },
+                foot: {
+                    bg: 'rgba(233,118,149,0.3)',
+                    height: 44,
+                    palyBtn: {
+                        size: 20,
+                        playImg: 'widget://image/play.png',
+                        pauseImg: 'widget://image/pause.png',
+                        marginLeft: 5
+                    },
+                    currentTimeLabel: {
+                        textSize: 12,
+                        textColor: "#FFF",
+                        textWidth: 43,
+                        marginLeft: 5
+                    },
+                    seekBar: {
+                        sliderImg: 'widget://image/slder.png',
+                        sliderW: 15,
+                        sliderH: 8,
+                        progressColor: '#696969',
+                        progressSelected: '#76EE00',
+                        marginLeft: 10,
+                        marginRight: 10
+                    },
+                    totalTimeLabel: {
+                        textSize: 12,
+                        textColor: "#FFF",
+                        textWidth: 43,
+                        marginRight: 5
+                    },
+                    fullscreenBtn: {
+                        size: 20,
+                        verticalImg: 'widget://image/fullscreen.png',
+                        horizontalImg: 'widget://image/unfullscreen.png',
+                    }
+                }
+            },
+            // path: 'http://haokan.baidu.com/v?pd=wisenatural&vid=6569257479234811442',
+            path: 'http://7o50kb.com2.z0.glb.qiniucdn.com/c1.1.mp4',
+
+            autoPlay: false,
+            // coverlmg:'widget://yue.png'
+        }, function(ret, err) {
+            if (ret) {
+                // alert(JSON.stringify(ret));
+                // } else {
+                // alert(JSON.stringify(err));
+            }
+
+        });
+    };
+    function fnclick(){
+
+      var click= $api.byId('click').innerHTML="已关注";
+
+    }
+
+</script>
+
+</html>
