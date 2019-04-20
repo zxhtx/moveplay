@@ -166,97 +166,30 @@
         apiready = function() {
           // alert(api.frameHeight)
           // alert(api.WinHeight)
+          ab()
         };
 
         function ab(argument) {
-         var moviePlayer = api.require('moviePlayer');
-         moviePlayer.open({
-          rect: {
-            x: 0,
-            y: 0,
-            w: api.frameWidth,
-            h: 300
+         var UIScrollPlayer = api.require('UIScrollPlayer');
+         UIScrollPlayer.open({
+          rect : {
+            x : 0,
+            y : 150,
+            h : 400
           },
-          texts:{
-            title:'宇文玥'
-          },
-          styles: {
-            head: {
-              bg: 'rgba(233,118,149,0.3)',
-              height: 44,
-              y: 20,
-
-              title: {
-                size: 20,
-                color: '#0f0',
-                width: 40,
-                leftMargin: 20
-              },
-              backSize: 20,
-              backImg: 'widget://image/back.png',
-              customButtons: [{
-                w: 20,
-                h: 20,
-                rightMagin: 10,
-                img: 'widget://image/more.png',
-                imgSelected: 'fs://image/collectSelected.png',
-
-              }]
-            },
-            foot: {
-              bg: 'rgba(233,118,149,0.3)',
-              height: 44,
-              palyBtn: {
-                size: 20,
-                playImg: 'widget://image/play.png',
-                pauseImg: 'widget://image/pause.png',
-                marginLeft: 5
-              },
-              currentTimeLabel: {
-                textSize: 12,
-                textColor: "#FFF",
-                textWidth: 43,
-                marginLeft: 5
-              },
-              seekBar: {
-                sliderImg: 'widget://image/slder.png',
-                sliderW: 15,
-                sliderH: 8,
-                progressColor: '#696969',
-                progressSelected: '#76EE00',
-                marginLeft: 10,
-                marginRight: 10
-              },
-              totalTimeLabel: {
-                textSize: 12,
-                textColor: "#FFF",
-                textWidth: 43,
-                marginRight: 5
-              },
-              fullscreenBtn: {
-                size: 20,
-                verticalImg: 'widget://image/fullscreen.png',
-                horizontalImg: 'widget://image/unfullscreen.png',
-              }
-            }
-          },
-            // path: 'http://haokan.baidu.com/v?pd=wisenatural&vid=6569257479234811442',
-          
-             path: 'http://7o50kb.com2.z0.glb.qiniucdn.com/c1.1.mp4',
-            // videoDirection:portrait,
-            showBack:false,
-            autorotation:false,
-            // isShowStatusBar:false,
-            autoPlay: true,
-            // coverlmg:'widget://yue.png'
-          }, function(ret, err) {
-            if (ret) {
-                // alert(JSON.stringify(ret));
-                // } else {
-                // alert(JSON.stringify(err));
-              }
-
-            });
+          videos : [{
+            imageUrl:'http://a8b2ba6ef61d32f2d7d9.test.upcdn.net/apicloud/ae4979df607eb91362beb6ee4e6df6fd.jpg',
+            videoUrl:'http://a8b2ba6ef61d32f2d7d9.test.upcdn.net/apicloud/9c31d6e61f7b7aa2d861ac4ec365c428.mp4',
+          },{
+            imageUrl:'http://a8b2ba6ef61d32f2d7d9.test.upcdn.net/apicloud/cfb3cde7eabcae636c0ac40e54daa43c.jpg',
+            videoUrl:'http://a8b2ba6ef61d32f2d7d9.test.upcdn.net/apicloud/e9bad319d0604048a2df22827af3332b.mp4',
+          },{
+            imageUrl:'http://a8b2ba6ef61d32f2d7d9.test.upcdn.net/apicloud/7370f5f4deb7d283b6c4b223d0a043c2.jpg',
+            videoUrl:'http://a8b2ba6ef61d32f2d7d9.test.upcdn.net/apicloud/4aef46a9cdc56f3aeabc671256733d40.mp4',
+          }],
+        },function(ret, err){
+          alert(JSON.stringify(ret));
+        });
        }
 
      </script>
