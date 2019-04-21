@@ -34,6 +34,7 @@
           .header .up{
             position: relative;
             z-index: 999;
+            color: white;
           }
           .up #img{
             padding: 5px;
@@ -256,6 +257,23 @@
                 // alert(JSON.stringify(ret));
                 // } else {
                 // alert(JSON.stringify(err));
+                api.openFrame({
+                    name: 'touming.html',
+                    url: './touming.html',
+                    rect: {
+                        x: 0,
+                        y: 0,
+                        w: 320,
+                        h: 480
+                    },
+                    pageParam: {
+                        name: 'test'
+                    },
+                    bounces: true,
+                    bgColor: 'rgba(0,0,0,0)',
+                    vScrollBarEnabled: true,
+                    hScrollBarEnabled: true
+                });
               }
 
             });
